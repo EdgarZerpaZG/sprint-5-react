@@ -1,0 +1,13 @@
+.navbar{
+    text-align: center;
+}
+.list{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+.list-item{
+    text-transform: uppercase;
+    list-style: none;
+    cursor: pointer;
+}
