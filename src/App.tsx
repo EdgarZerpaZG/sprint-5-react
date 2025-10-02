@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import styles from './_App.module.scss'
 import Header from './components/header/header'
+import Manager from './components/manager/manager'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,6 +10,7 @@ function App() {
   return (
     <>
       <Header />
+      <Manager />
       <div className={styles.container}>
         <h1>¡Bienvenido a BookMarks!</h1>
         <h2>Vite + React</h2>
