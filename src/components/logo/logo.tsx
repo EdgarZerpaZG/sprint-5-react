@@ -1,8 +1,4 @@
-interface LogoProps {
-  src: string,
-  alt?: string,
-  style?: string
-}
+import type { LogoProps } from './logoTypes'
 
 function Logo({ src, alt, style }: LogoProps) {
   return (
