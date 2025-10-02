@@ -1,17 +1,15 @@
-import navStyles from './nav.module.css'
+import navStyles from './_nav.module.scss'
 function Nav() {
 
   return (
     <>
-      <nav>
-          <div className={navStyles.navbar}>
-              <ul className={navStyles.list}>
-                  <li className={navStyles['list-item']}>Features</li>
-                  <li className={navStyles['list-item']}>Pricing</li>
-                  <li className={navStyles['list-item']}>Contact</li>
-                  <li className={navStyles['list-item']}>Login</li>
-              </ul>
-          </div>
+      <nav className={navStyles.navbar}>
+        <ul className={navStyles.list}>
+            <li className={navStyles.item}>Features</li>
+            <li className={navStyles.item}>Pricing</li>
+            <li className={navStyles.item}>Contact</li>
+            <li className={navStyles.login}>Login</li>
+        </ul>
       </nav>
     </>
   )
