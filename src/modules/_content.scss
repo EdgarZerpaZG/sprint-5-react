@@ -1,0 +1,95 @@
+.img-monitor{
+    width: 300px;
+    height: auto;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    z-index: 2;
+}
+@mixin monitor($border-r: 0 0 0 60px) {
+    content: "";
+    position: absolute;
+    bottom: -45px;
+    width: 350px;
+    height: 200px;
+    border-radius: $border-r;
+    background-color: $blue;
+}
+.img-monitor-before-one::before {
+  @include monitor;
+  right: -100px;
+}
+.img-monitor-before-two::before {
+  @include monitor($border-r: 0 0 60px 0);
+  left: -100px;
+}
+.img-monitor.img-border{
+    border: 10px solid $black;
+    border-radius: 10px;
+}
+.img-monitor.img-shadow{
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.shadow-card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.tabs{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #fff;
+}
+.tabs .tab-item{
+    font-size: 16px;
+    padding: 15px 45px;
+    cursor: pointer;
+    border: none;
+    border-bottom: 2px solid #5d5d5d;
+    background-color: #fff;
+    transition: 1s;
+}
+.tabs .tab-item.active{
+    border-bottom: 2px solid #fb5859;
+}
+.tabs .tab-item:hover {
+  background-color: #ddd;
+}
+.tab-content {
+  display: none;
+  padding: 6px 12px;
+}
+.form-group input{
+    padding: 8px;
+}
+.accordion-list{
+    list-style: none;
+}
+.accordion-list .accordion-item{
+    margin: 10px 0;
+    padding: 20px 0;
+    border-bottom: 1px solid $light;
+}
+.accordion-list .accordion-item:nth-child(1){
+    border-top: 1px solid $light;
+}
+.accordion-list .accordion-item img{
+    margin-left: 120px;
+    float: right;
+}
+details summary img{
+    transform: rotate(180deg);
+}
+details:open summary img{
+    transform: rotate(180deg);
+}
+.accordion-content {
+    width: 60%;
+}
+.accordion-list .accordion-item p{
+    color: #5d5d5d;
+}
+details > summary::marker {
+    content: none;
+}
