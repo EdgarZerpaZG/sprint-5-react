@@ -1,0 +1,52 @@
+$white: #fff;
+$black: #000;
+$light: #5d5d5d;
+$light-two: #ccc;
+$blue: #5266df;
+$dark-blue: #242946;
+$red: #fb5859;
+$dark-red: #b23030;
+
+.footer-one{
+    background-color: $blue;
+    color: $white;
+}
+.footer-two{
+    background-color: $dark-blue;
+    color: $white;
+}
+.footer-list{
+    height: 100%;
+}
+.footer-menu{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.footer-menu .menu-item{
+    font-size: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s;
+}
+.footer-menu .menu-item:hover{
+    color: $black;
+    transition: .5s;
+}
+.footer-icons{
+    display: flex;
+    justify-content: end;
+}
+.footer-icons img{
+    margin: 0 10px;
+    transition: .5s;
+}
+.footer-icons img:hover{
+    filter: brightness(0) saturate(100%) invert(51%) sepia(90%) saturate(2132%) hue-rotate(322deg) brightness(99%) contrast(99%);
+    transition: .5s;
+}
