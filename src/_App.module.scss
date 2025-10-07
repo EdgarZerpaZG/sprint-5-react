@@ -228,3 +228,121 @@ p{
 .btn-light:hover{
     @include btn-hover($background: $black, $color: $light-two);
 }
+
+/*Media Queries*/
+/******************************************/
+@media screen and (min-width: 1200px){
+    .container {
+        width: 1170px;
+    }
+}
+@media screen and (min-width: 992px){
+    .container {
+        width: 970px;
+    }
+}
+@media screen and (max-width: 768px){
+    .tabs{
+        display: block;
+    }
+    .tabs .tab-item{
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+    .text-align-md-center{
+        text-align: center;
+    }
+    .justify-content-md-center{
+        justify-content: center;
+    }
+    .mx-md-auto{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer-menu{
+        display: block;
+    }
+    .footer-menu .menu-item{
+        display: block;
+        text-align: center;
+        margin: 20px 0;
+    }
+    .footer-icons{
+        justify-content: center;
+        margin: 20px 0;
+    }
+    .footer-logo{
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+    .form-group{
+        display: inline-grid;
+        width: 80%;
+    }
+    .form-group input{
+        margin-bottom: 20px;
+    }
+    .img-monitor-before-one{
+        margin-bottom: 60px;
+    }
+    .img-monitor-before-two{
+        margin-bottom: 60px;
+    }
+    .img-monitor-before-one::before{
+        right: -15px;
+        width: 300px;
+    }
+    .img-monitor-before-two::before{
+        left: -15px;
+        width: 300px;
+    }
+    .my-md-4{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .order-md-0{
+        order: 0;
+    }
+    .order-md-1{
+        order: 1;
+    }
+    .d-md-block{
+        display: block;
+    }
+    .d-md-none{
+        display: none;
+    }
+    .accordion-content {
+        width: 80%;
+    }
+}
+@media screen and (min-width: 768px){
+    .container {
+        width: 750px;
+    }
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    .col-md-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+    .mt-md-0{
+        margin-top: 0;
+    }
+    .mt-md-2{
+        margin-top: .5rem;
+    }
+    .mt-md-3{
+        margin-top: 1rem;
+    }
+    .mt-md-4{
+        margin-top: 2rem;
+    }
+    .mt-md-5{
+        margin-top: 4rem;
+    }
+}
