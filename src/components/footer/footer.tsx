@@ -1,5 +1,9 @@
 import styles from './../../_App.module.scss'
 import stylesFooter from './footer.module.scss'
+import ImgFooter from './imgFooter/imgFooter'
+import BookmarksWhite from '/logo-bookmark-white.svg'
+import FacebookImg from '/icon-facebook.svg'
+import TwitterImg from '/icon-twitter.svg'
 
 function Footer() {
     return (
@@ -17,28 +21,28 @@ function Footer() {
                     <div className={`${styles["container"]}`}>
                         <div className={`${styles["row"]}`}>
                             <div className={`${styles["col-12"]} ${styles["col-md-4"]}`}>
-                                <div className={`${styles["footer-logo"]}`}>
+                                <div className={`${stylesFooter["footer-logo"]}`}>
                                     <a href="#">
-                                        <img className={`${styles["img-fluid"]}`} src="img/logo-bookmark-white.svg" alt="Bookmark" />
+                                        <ImgFooter style={styles["img-fluid"]} src={BookmarksWhite} alt="Bookmarks" />
                                     </a>
                                 </div>
                             </div>
                             <div className={`${styles["col-12"]} ${styles["col-md-4"]}`}>
-                                <div className={`${styles["footer-list"]}`}>
-                                    <ul className={`${styles["footer-menu"]} ${styles["text-uppercase"]}`}>
-                                        <li className={`${styles["menu-item"]}`}>Features</li>
-                                        <li className={`${styles["menu-item"]}`}>Pricing</li>
-                                        <li className={`${styles["menu-item"]}`}>Contact</li>
+                                <div className={`${stylesFooter["footer-list"]}`}>
+                                    <ul className={`${stylesFooter["footer-menu"]} ${styles["text-uppercase"]}`}>
+                                        <li className={`${stylesFooter["menu-item"]}`}>Features</li>
+                                        <li className={`${stylesFooter["menu-item"]}`}>Pricing</li>
+                                        <li className={`${stylesFooter["menu-item"]}`}>Contact</li>
                                     </ul>
                                 </div>
                             </div>
                             <div className={`${styles["col-12"]} ${styles["col-md-4"]}`}>
-                                <div className={`${styles["footer-icons"]}`}>
+                                <div className={`${stylesFooter["footer-icons"]}`}>
                                     <a href="#">
-                                        <img className={`${styles["img-fluid"]}`} src="img/icon-facebook.svg" alt="Logo Facebook" />
+                                        <ImgFooter style={`${styles["img-fluid"]} ${stylesFooter["footer-img"]}`} src={FacebookImg} alt="Logo Facebook" />
                                     </a>
                                     <a href="#">
-                                        <img className={`${styles["img-fluid"]}`} src="img/icon-twitter.svg" alt="Logo Twitter" />
+                                        <ImgFooter style={`${styles["img-fluid"]} ${stylesFooter["footer-img"]}`} src={TwitterImg} alt="Logo Twitter" />
                                     </a>
                                 </div>
                             </div>

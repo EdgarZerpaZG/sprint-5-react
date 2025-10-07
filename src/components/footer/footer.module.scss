@@ -11,6 +11,11 @@ $dark-red: #b23030;
     background-color: $blue;
     color: $white;
 }
+input{
+    padding: 8px;
+    background-color: $white;
+    border: none;
+}
 .footer-two{
     background-color: $dark-blue;
     color: $white;
@@ -25,7 +30,7 @@ $dark-red: #b23030;
     align-items: center;
     height: 100%;
 }
-.footer-menu .menu-item{
+.menu-item{
     font-size: 12px;
     margin-left: 10px;
     margin-right: 10px;
@@ -34,7 +39,7 @@ $dark-red: #b23030;
     cursor: pointer;
     transition: .5s;
 }
-.footer-menu .menu-item:hover{
+.menu-item:hover{
     color: $black;
     transition: .5s;
 }
@@ -42,11 +47,6 @@ $dark-red: #b23030;
     display: flex;
     justify-content: end;
 }
-.footer-icons img{
+.footer-img{
     margin: 0 10px;
-    transition: .5s;
-}
-.footer-icons img:hover{
-    filter: brightness(0) saturate(100%) invert(51%) sepia(90%) saturate(2132%) hue-rotate(322deg) brightness(99%) contrast(99%);
-    transition: .5s;
 }
