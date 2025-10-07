@@ -1,0 +1,31 @@
+$light: #5d5d5d;
+.accordion-list{
+    list-style: none;
+}
+.accordion-list .accordion-item{
+    margin: 10px 0;
+    padding: 20px 0;
+    border-bottom: 1px solid $light;
+}
+.accordion-list .accordion-item:nth-child(1){
+    border-top: 1px solid $light;
+}
+.accordion-list .accordion-item img{
+    margin-left: 120px;
+    float: right;
+}
+details summary img{
+    transform: rotate(180deg);
+}
+details:open summary img{
+    transform: rotate(180deg);
+}
+.accordion-content {
+    width: 60%;
+}
+.accordion-list .accordion-item p{
+    color: #5d5d5d;
+}
+details > summary::marker {
+    content: none;
+}
