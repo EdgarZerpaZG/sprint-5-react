@@ -1,8 +1,5 @@
-import ImgFeatures from './imgFeatures/imgFeatures'
 import styles from './../../_App.module.scss'
-import tabStyles from './features.module.scss'
-import imgFeaturesStyles from './imgFeatures/imgFeatures.module.scss'
-import FeatureOne from '/illustration-features-tab-1.svg'
+import Tabs from './tabsFeature/tabs'
 
 export default function Features() {
     return (
@@ -10,23 +7,7 @@ export default function Features() {
             <section className={`${styles["container"]} ${styles["position-relative"]} ${styles["my-4"]} ${styles["py-4"]}`}>
                 <h3 className={`${styles['text-center']}`}>Features</h3>
                 <p className={`${styles['mb-3']} ${styles['text-light']}`}>Our aim is to make it quick and easy for you to access your <br className="d-block d-md-none" />favorite websites. Your bookmarks sync between your devices <br className="d-block d-md-none" />so you can access them on the go</p>
-                <div className={`${tabStyles["tabs"]} ${tabStyles["my-5"]}`}>
-                    <button id="defaultOpen" className={`${tabStyles["tablinks"]} ${tabStyles["tab-item"]} ${styles["pb-4"]}`}>Simple Bookmarking</button>
-                    <button className={`${tabStyles["tablinks"]} ${tabStyles["tab-item"]} ${styles["pb-4"]}`}>Speedy Searching</button>
-                    <button className={`${tabStyles["tablinks"]} ${tabStyles["tab-item"]} ${styles["pb-4"]}`}>Easy Sharing</button>
-                </div>
-                <div className={`${styles['row']} ${styles['my-5']}`}>
-                    <ImgFeatures src={FeatureOne} style={imgFeaturesStyles["img-monitor"]} alt="Feature 1" />
-                    <div className={`${styles['col-12']} ${styles['col-md-6']} ${styles['my-md-4']}`}>
-                        <div className={`${styles['d-flex']} ${styles['justify-content-center']} ${styles['align-items-center']} ${styles['h-100']}`}>
-                            <div>
-                                <h5 className={`${styles["mb-3"]} ${styles['text-left']} ${styles["text-align-md-center"]}`}>Bookmark in one click</h5>
-                                <p className={`${styles["mb-3"]} ${styles['text-left']} ${styles["text-light"]} ${styles["text-align-md-center"]}`}>Organize your bookmarks however you like. Our <br className="d-block d-md-none" />simple drag-and-drop interface gives you complete <br className="d-block d-md-none" />control over how you manage your favorite sites.</p>
-                                <button type="button" className={`${styles["btn-blue"]} ${styles['d-block']} ${styles['mx-md-auto']}`}>More info</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <Tabs />
             </section>
         </>
     )
