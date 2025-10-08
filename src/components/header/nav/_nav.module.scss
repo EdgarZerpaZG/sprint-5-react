@@ -1,3 +1,12 @@
+$white: #fff;
+$black: #000;
+$light: #5d5d5d;
+$light-two: #ccc;
+$blue: #5266df;
+$dark-blue: #242946;
+$red: #fb5859;
+$dark-red: #b23030;
+
 .navbar{
     text-align: center;
 }
@@ -12,12 +21,10 @@
     color: #000;
     cursor: pointer;
     padding: 5px 20px;
+    display: flex;
+    align-items: center;
 }
-.login{
-    text-transform: uppercase;
-    list-style: none;
-    color: #fb5859;
-    padding: 5px 20px;
-    cursor: pointer;
-    border: 1px solid #fb5859;
+.item:hover{
+    color: $light-two;
+    transition: .5s;
 }

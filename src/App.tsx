@@ -6,17 +6,17 @@ import Extension from './components/extensionSection/extension'
 import Questions from './components/questionsSection/questions'
 import Footer from './components/footer/footer'
 
-function App() {
+export default function App() {
   return (
     <>
-      <Header />
-      <Manager />
-      <Features />
-      <Extension />
-      <Questions />
-      <Footer />
+      <main>
+        <Header />
+        <Manager />
+        <Features />
+        <Extension />
+        <Questions />
+        <Footer />
+      </main>
     </>
   )
 }
-
-export default App

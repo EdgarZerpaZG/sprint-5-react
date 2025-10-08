@@ -5,7 +5,7 @@ import BookmarksWhite from '/logo-bookmark-white.svg'
 import FacebookImg from '/icon-facebook.svg'
 import TwitterImg from '/icon-twitter.svg'
 
-function Footer() {
+export default function Footer() {
     return (
         <>
             <footer>
@@ -53,4 +53,3 @@ function Footer() {
         </>
     )
 }
-export default Footer

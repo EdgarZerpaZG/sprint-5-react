@@ -4,18 +4,23 @@ import ImgManager from './imgManager/imgManager'
 import InfoManager  from './infoManager/infoManager'
 import styles from './../../_App.module.scss'
 
-function Manager() {
+export default function Manager() {
   return (
     <>
-      <section>
-        <div className={`${styles['d-flex']} ${styles['justify-content-center']} ${styles['align-items-center']} ${styles['h-100']}`}>
-          <InfoManager />
-          <div className={`${styles['p-3']}`}>
-              <ImgManager src={imgFeatureManager} style={imgManagerStyles['img-monitor']} alt="BookMarks Manager" />
+      <section className={`${styles["container"]} ${styles["position-relative"]} ${styles["my-4"]} ${styles["py-4"]}`}>
+        <div className={`${styles['row']}`}>
+          <div className={`${styles['col-12']} ${styles['col-md-6']} ${styles['my-md-4']} ${styles['order-0']} ${styles['order-md-1']}`}>
+            <div className={`${styles['d-flex']} ${styles['justify-content-center']} ${styles['align-items-center']} ${styles['h-100']}`}>
+              <InfoManager />
+            </div>
+          </div>
+          <div className={`${styles['col-12']} ${styles['col-md-6']} ${styles['order-1']} ${styles['order-md-0']}`}>
+            <div className={`${styles['position-relative']}`}>
+                <ImgManager src={imgFeatureManager} style={imgManagerStyles['img-monitor']} alt="BookMarks Manager" />
+            </div>
           </div>
         </div>
       </section>
     </>
   )
 }
-export default Manager

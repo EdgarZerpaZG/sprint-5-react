@@ -3,10 +3,10 @@ import stylesQuestions from './questions.module.scss'
 import ImgQuestion from './imgQuestion/imgQuestion'
 import ArrowIcon from '/icon-arrow.svg'
 
-function Questions() {
+export default function Questions() {
     return (
         <>
-        <section className={`${styles["position-relative"]} ${styles["my-4"]} ${styles["py-4"]}`}>
+        <section className={`${styles["container"]} ${styles["position-relative"]} ${styles["my-4"]} ${styles["py-4"]}`}>
             <div className={styles["text-center"]}>
                 <h5 className={`${styles["mb-3"]}`}>Frequently Asked Questions</h5>
                 <p className={`${styles["mb-3"]} ${styles["text-light"]}`}>Here are some of or FAQs. if you have any other questions <br className={`${styles["d-block"]} ${styles["d-md-none"]}`} />you'd like answered please feel free to email us.</p>
@@ -40,4 +40,3 @@ function Questions() {
         </>
     )
 }
-export default Questions

@@ -7,10 +7,10 @@ import MozilleImg from '/logo-firefox.svg'
 import OperaImg from '/logo-opera.svg'
 import DotsImg from '/bg-dots.svg'
 
-function Extension() {
+export default function Extension() {
     return (
         <>
-            <section>
+            <section className={`${styles["container"]} ${styles["position-relative"]} ${styles["my-4"]} ${styles["py-4"]}`}>
                 <div className={styles["text-center"]}>
                     <h5 className={styles["mb-3"]}>Download the extension</h5>
                     <p className={`${styles["mb-3"]} ${styles["text-light"]}`}>We've got more browsers in the pipeline. Please do let us know if <br className={`${styles["d-block"]} ${styles["d-md-none"]}`} />you've got a favorite you'd like us to prioritize.</p>
@@ -27,7 +27,7 @@ function Extension() {
                             </div>
                         </div>
                     </div>
-                    <div className={`${styles["col-12"]} ${styles["col-md-4"]} ${styles["d-flex"]} ${styles["justify-content-center"]} ${styles["mt-md-0"]} ${styles["h-100"]}`}>
+                    <div className={`${styles["col-12"]} ${styles["col-md-4"]} ${styles["d-flex"]} ${styles["justify-content-center"]} ${styles["mt-4"]} ${styles["mt-md-4"]} ${styles["h-100"]}`}>
                         <div className={`${styles["py-3"]} ${styles["text-center"]} ${stylesExtension["shadow-card"]} ${styles["mx-3"]}`}>
                             <ImgExtension src={MozilleImg} style={`${styles["d-block"]} ${styles["mx-auto"]} ${styles["my-3"]}`} alt="Logo Mozilla Firefox" />
                             <p>Add to Firefox</p>
@@ -38,7 +38,7 @@ function Extension() {
                             </div>
                         </div>
                     </div>
-                    <div className={`${styles["col-12"]} ${styles["col-md-4"]} ${styles["d-flex"]} ${styles["justify-content-center"]} ${styles["mt-md-0"]} ${styles["h-100"]}`}>
+                    <div className={`${styles["col-12"]} ${styles["col-md-4"]} ${styles["d-flex"]} ${styles["justify-content-center"]} ${styles["mt-4"]} ${styles["mt-md-5"]} ${styles["h-100"]}`}>
                         <div className={`${styles["py-3"]} ${styles["text-center"]} ${stylesExtension["shadow-card"]} ${styles["mx-3"]}`}>
                             <ImgExtension src={OperaImg} style={`${styles["d-block"]} ${styles["mx-auto"]} ${styles["my-3"]}`} alt="Logo Opera" />
                             <p>Add to Opera</p>
@@ -54,5 +54,3 @@ function Extension() {
         </>
     )
 }
-
-export default Extension
