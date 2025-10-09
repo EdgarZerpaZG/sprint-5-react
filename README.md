@@ -1,6 +1,6 @@
 # IT Academy - Sprint N°5: REACT
 
-# 🌐 Simple React Landing Page
+## 🌐 Simple React Landing Page
 
 This project is a **beginner-friendly React application** focused on learning the **structure of a React environment** and understanding the **implementation of components and hooks**.  
 It serves as a first step into building interactive and modular web interfaces using React.
@@ -46,7 +46,7 @@ npm run dev
 4. Open the localhost url:
 - Example: http://localhost:5173/
 
-5. Additional feature with Testing(Jest), open the terminal and run:
+5. Additional feature with Testing(Vitest), open the terminal and run:
 ```
 npm run test
 ```
