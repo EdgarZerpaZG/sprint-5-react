@@ -1,5 +1,4 @@
 import { useForm } from 'react-hook-form';
-import React from 'react'
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import styles from './../../../_App.module.scss'
