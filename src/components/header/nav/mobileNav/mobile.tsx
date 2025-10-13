@@ -1,39 +1,44 @@
 import styles from './../../../../_App.module.scss'
-import navStyles from './../_nav.module.scss'
+import mobileStyles from './mobile.module.scss'
+import Menu from '/icon-hamburger.svg'
+import Close from '/icon-close.svg'
+import BookmarkWhite from '/logo-bookmark-white.svg'
+import Facebook from '/icon-facebook.svg'
+import Twitter from '/icon-twitter.svg'
 
 export default function MobileNav() {
   return (
     <>
-        <div id="menu-mobile-btn" className={`${navStyles["header-list-mobile"]} ${styles["d-none"]} ${styles["d-md-block"]} ${styles["h-100"]}`}>
-            <div className="menu-mobile-box h-100 d-flex justify-content-center align-items-center">
-                <img className="img-fluid" src="img/icon-hamburger.svg" alt="Bookmark"/>
+        <div id="menu-mobile-btn" className={`${styles["d-none"]} ${styles["d-md-block"]} ${styles["h-100"]}`}>
+            <div className={`${mobileStyles["menu-mobile-box"]} ${styles["h-100"]} ${styles["d-flex"]} ${styles["justify-content-center"]} ${styles["align-items-center"]}`}>
+                <img className={`${styles["img-fluid"]}`} src={Menu} alt="Bookmark"/>
             </div>
         </div>
-        <div id="menu-mobile" className={`${navStyles["menu-mobile"]} ${styles["d-none"]} ${styles["d-md-block"]}`}>
+        <div id="menu-mobile" className={`${mobileStyles["menu-mobile"]} ${styles["d-none"]} ${styles["d-md-block"]}`}>
             <div id="menu-mobile-close" className="btn-close-box">
-                <img className="img-fluid btn-close" src="img/icon-close.svg" alt="Bookmark"/>
+                <img className={`${mobileStyles["btn-close"]} ${styles["img-fluid"]}`} src={Close} alt="Bookmark"/>
             </div>
-            <div className="menu-mobile-logo">
-                <img className="img-fluid" src="img/logo-bookmark-white.svg" alt="Bookmark"/>
+            <div className={`${mobileStyles["menu-mobile-logo"]}`}>
+                <img className={`${styles["img-fluid"]}`} src={BookmarkWhite} alt="Bookmark"/>
             </div>
-            <div className="menu-mobile-content">
-                <div className="h-100 w-100">
-                    <div className="col-12 h-100">
-                        <div className="menu-mobile-list">
-                            <ul className="header-menu-mobile text-uppercase">
-                                <li className="menu-item">Features</li>
-                                <li className="menu-item">Pricing</li>
-                                <li className="menu-item">Contact</li>
-                                <li className="menu-item">
-                                    <div className="menu-mobile-login">Login</div>
+            <div className={`${mobileStyles["menu-mobile-content"]}`}>
+                <div className={`${styles["h-100"]} ${styles["w-100"]}`}>
+                    <div className={`${styles["col-12"]} ${styles["h-100"]}"`}>
+                        <div className={`${mobileStyles["menu-mobile-list"]}`}>
+                            <ul className={`${mobileStyles["header-menu-mobile"]} ${mobileStyles["text-uppercase"]}`}>
+                                <li className={`${mobileStyles["menu-item"]}`}>Features</li>
+                                <li className={`${mobileStyles["menu-item"]}`}>Pricing</li>
+                                <li className={`${mobileStyles["menu-item"]}`}>Contact</li>
+                                <li className={`${mobileStyles["menu-item"]}`}>
+                                    <div className={`${mobileStyles["menu-mobile-login"]}`}>Login</div>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div className="col-12">
-                        <div className="menu-mobile-icons">
-                            <img className="img-fluid" src="img/icon-facebook.svg" alt="Logo Facebook"/>
-                            <img className="img-fluid" src="img/icon-twitter.svg" alt="Logo Twitter"/>
+                    <div className={`${styles["col-12"]}`}>
+                        <div className={`${mobileStyles["menu-mobile-icons"]}`}>
+                            <img className={`${styles["img-fluid"]}`} src={Facebook} alt="Logo Facebook"/>
+                            <img className={`${styles["img-fluid"]}`} src={Twitter} alt="Logo Twitter"/>
                         </div>
                     </div>
                 </div>

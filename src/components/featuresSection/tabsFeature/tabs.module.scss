@@ -41,3 +41,13 @@ $dark-red: #b23030;
 .tab-page.active {
     display: block;
 }
+@media screen and (max-width: 768px){
+    .tabs{
+        display: block;
+    }
+    .tabs .tab-item{
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+}

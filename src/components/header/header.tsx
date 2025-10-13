@@ -9,12 +9,12 @@ export default function Header() {
     <>
       <header className={`${styles["container"]} ${styles['my-3']}`}>
         <div className={`${styles['row']} ${styles['justify-content-between']}`}>
-          <div className={`col-md-6`}>
+          <div className={`${styles["col-md-6"]}`}>
             <div className={logoStyles['logo-box']}>
               <Logo src={BookMark} style={logoStyles.logo} alt="Logo Bookmarks" />
             </div>
           </div>
-          <div className={`col-md-6`}>
+          <div className={`${styles["col-md-6"]}`}>
             <Nav />
           </div>
         </div>
